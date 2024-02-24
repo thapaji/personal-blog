@@ -1,5 +1,5 @@
 :root {
-  --primary: #231f20;
+  --primary: #063970;
   --shadow: -5px 5px 10px 5px gray;
 }
 
@@ -21,7 +21,7 @@ a:hover {
 }
 
 .main-container {
-  background-color: #231f20;
+  background-color: var(--primary);
   height: 60vh;
 }
 
@@ -129,8 +129,7 @@ a:hover {
   font-weight: bold;
   font-size: 24px;
 }
-
-.message-box hr {
+</div > .message-box hr {
   width: 100%;
 }
 
@@ -152,7 +151,7 @@ h1 {
   padding-top: 20px;
 }
 
-.main-content h2 {
+h2 {
   margin-bottom: 20px;
 }
 
@@ -184,10 +183,12 @@ article .title {
   font-weight: bolder;
 }
 .btn {
-  background: orangered;
+  background: var(--primary);
+  color: aliceblue;
   padding: 10px 15px;
   border-radius: 5px;
   box-shadow: var(--shadow);
+  margin-top: 5px;
 }
 .btn:hover {
   cursor: pointer;
@@ -267,12 +268,15 @@ article .btn {
 .contact-me {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   padding: 32px 0;
 }
 
 .contact-me form {
   margin-top: 20px;
+}
+.contact-me h2 {
+  align-items: left;
 }
 
 .contact-me input {
@@ -281,11 +285,16 @@ article .btn {
   padding: 5px 10px;
   border: 1px solid rgba(128, 128, 128, 0.68);
   border-radius: 8px;
-  color: gray;
+  /* color: gray; */
   margin-left: 5px;
 }
 
+.contact-me button {
+  width: 45%;
+}
+
 .contact-me textarea {
+  margin-top: 12px;
   width: 93.5%;
   line-height: 42px;
   padding: 5px 10px;
@@ -293,6 +302,21 @@ article .btn {
   border-radius: 8px;
   color: gray;
   margin-left: 5px;
+}
+
+.about-me {
+  background-color: var(--primary);
+  color: aliceblue;
+  padding: 32px 0;
+}
+
+.about-me h4 {
+  margin-top: 5px;
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 10px 0;
 }
 
 .footer {
