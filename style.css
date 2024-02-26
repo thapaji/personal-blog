@@ -1,13 +1,21 @@
 :root {
-  --primary: #063970;
-  --shadow: -5px 5px 10px 5px gray;
+  --primary-theme-color: #436850;
+  --secondary-theme-color: #fbfada;
+  --primary-font-color: #12372a;
+  --secondary-font-color: #adbc9f;
+  --shadow: -5px 5px 10px 5px var(--primary-theme-color);
 }
 
 * {
   margin: 0;
   padding: 0;
-  /* color: white;
-  text-decoration: none; */
+  color: var(--font-theme-color);
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: var(--secondary-font-color);
 }
 
 a {
@@ -18,6 +26,61 @@ a {
 a:hover {
   cursor: pointer;
   color: red;
+}
+
+.wrapper {
+  background: var(--primary-theme-color);
+  /* padding: 1em 3em; */
+  display: flex;
+}
+
+.left-theme-col {
+  width: 40vw;
+  padding: 2em 10em 0 2em;
+}
+
+.pic-container {
+  background-color: var(--secondary-theme-color);
+  color: var(--primary);
+  width: 40vw;
+  height: 40vw;
+  border: 1em solid var(--primary-theme-color);
+  padding: 1em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  background: var(--secondary-theme-color);
+  border: 1em solid var(--primary-theme-color);
+  width: 35vw;
+  height: 35vw;
+  border-radius: 50%;
+}
+
+.profile-pic > img {
+  width: 160%;
+  transform: translateX(-14%) translateY(-25%);
+  border-radius: 50%;
+  border-bottom: 2em solid var(--primary-theme-color);
+}
+
+.container {
+  background: var(--secondary-theme-color);
+  height: 100vh;
+}
+.menu {
+  height: 3em;
+}
+
+.content {
+  height: 80vh;
+  border: 1px solid var(--primary-theme-color);
+}
+
+.this-is-the-end {
 }
 
 .main-container {
